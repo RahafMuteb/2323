@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogimg"
+        android:gravity="center"
+        tools:context=".LocketInfoActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="344dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="20dp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Locker Info"
+                        android:textColor="#003482"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/alike_angular" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="Location: "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/alike_angular" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLockerNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Locker Number: "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/alike_angular"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Price: "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/alike_angular"
+
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Book"
+            android:textColor="#003482"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            app:fontFamily="@font/alike_angular"
+            />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnBook"
+            android:text="Back"
+            android:layout_marginStart="30dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:textColor="#003482"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            app:fontFamily="@font/alike_angular" />
+
+
+    </RelativeLayout>
+</layout>

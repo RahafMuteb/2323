@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LocketInfoActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="16dp"
+            android:elevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- activity_credit_card.xml -->
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    tools:context=".CreditCardActivity">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter card details"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/editCardNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Card Number"
+                        android:inputType="number"
+                        android:background="@drawable/bg_bordered_btn"
+                        android:padding="10dp"
+                        android:maxLines="1"/>
+
+                    <EditText
+                        android:id="@+id/editCardHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="Card Holder Name"
+                        android:inputType="text"
+                        android:background="@drawable/bg_bordered_btn"
+                        android:padding="10dp"
+                        android:maxLines="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/editExpiryDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="8dp"
+                            android:hint="Expiry (MM/YY)"
+                            android:inputType="number"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:padding="10dp"
+                            android:maxLines="1"/>
+
+                        <EditText
+                            android:id="@+id/editCVV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="8dp"
+                            android:hint="CVV"
+                            android:inputType="number"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:padding="10dp"
+                            android:maxLines="1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pay"
+
+                    android:textAllCaps="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

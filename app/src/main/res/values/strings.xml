@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tayseer</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="googleApi">AIzaSyCMwS4HeQO9RCgLUOY38uq-_jB7_t2h5KM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawe</string>
+    <string name="navigation_drawer_close">Close navigation drawe</string>
+
+
+</resources>

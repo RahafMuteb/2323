@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backimg"
+        android:gravity="center"
+        tools:context=".LocketInfoActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/btnBook"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="20dp"
+                    >
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="Please create your locker password to complete locker reservation."
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/alike_angular" />
+
+
+                    <TextView
+                        android:id="@+id/tvPin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="30dp"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <TextView
+                            android:id="@+id/btn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/btn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+
+                            android:id="@+id/btnA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="A"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <TextView
+                            android:id="@+id/btn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btn5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="5"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btn6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="6"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btnB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="B"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <TextView
+                            android:id="@+id/btn7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btn8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="8"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btn9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="9"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btnC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="C"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <TextView
+                            android:id="@+id/btnStar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="*"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btn0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btnHash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="#"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/btnD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/bg_bordered_btn"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="16dp"
+                            android:text="D"
+                            android:textAlignment="center"
+                            android:textColor="#0449B2"
+                            android:textSize="18dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="10dp"
+                    app:fontFamily="@font/alike_angular"
+                    android:backgroundTint="#003482"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
+    <!-- #1C72C2 0449B2 325EA2  003482 -->

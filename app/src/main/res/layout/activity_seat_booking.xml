@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    android:gravity="center"
+    tools:context=".SeatBookingActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Please select a locker you wish to reserve."
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/alike_angular" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_below="@id/text"
+        android:layout_width="640dp"
+        android:layout_height="344dp"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        app:cardCornerRadius="16dp">
+
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/blue_border"
+        android:gravity="center">
+
+        <GridView
+            android:id="@+id/gridViewLockers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:columnWidth="20dp"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp" />
+
+    </GridLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/blue_locker"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="-118dp"
+        android:layout_below="@id/card"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/available"
+        android:src="@drawable/bluelocker"
+        />
+
+    <TextView
+        android:id="@+id/available"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/card"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:text="Available"
+        android:textColor="#3D3D42"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/gray_locker"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="-118dp"
+        android:layout_below="@id/card"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/unavailable"
+        android:src="@drawable/graaylocker"
+        />
+
+    <TextView
+        android:id="@+id/unavailable"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/card"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Unavailable"
+        android:textColor="#3D3D42"
+        android:textSize="17dp" />
+
+
+
+</RelativeLayout>
